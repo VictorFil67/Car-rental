@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fill, minmax(274px, 1fr));
   grid-gap: 29px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 100px;
   padding: 0;
   list-style: none;
   margin-left: auto;

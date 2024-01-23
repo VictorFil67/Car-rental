@@ -1,0 +1,13 @@
+.loadMore {
+  color: #3470ff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 150px;
+}

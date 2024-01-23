@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import Select from "react-select";
+import Select, { components } from "react-select";
 import { fetchFilteredCars } from "../../store/cars/operations";
 import { toast } from "react-toastify";
 import { filteredByPrice } from "../../store/cars/slice";
 import s from "./Filters.module.css";
+import { myStyles } from "./FilterStyles";
+import ArrowUpSvg from "../SVG/FiltersSvg/ArrowUpSvg";
+import ArrowDownSvg from "../SVG/FiltersSvg/ArrowDownSvg";
 
 const options = [
   { value: "", label: "All" },
@@ -64,27 +67,47 @@ export const Filters = () => {
         // alert('error');
       });
   };
+  const DropdownIndicator = (props) => {
+    return (
+      <components.DropdownIndicator {...props}>
+        {props.selectProps.menuIsOpen ? <ArrowUpSvg /> : <ArrowDownSvg />}
+      </components.DropdownIndicator>
+    );
+  };
   return (
-    <div className="formWrap">
+    <div className={s.formWrap}>
       <form className={s.searchForm} onSubmit={handleSubmit}>
         <div className="makes">
           <p className={s.filterTitle}>Car brand</p>
-          <Select
-            placeholder="Enter the text"
-            defaultValue={selectedOption}
-            onChange={setSelectedOption}
-            options={options}
-          />
+          <div className={s.selectBrand}>
+            <Select
+              placeholder="Enter the text"
+              styles={myStyles}
+              defaultValue={selectedOption}
+              onChange={setSelectedOption}
+              options={options}
+              components={{
+                DropdownIndicator,
+                IndicatorSeparator: () => null,
+              }}
+            />
+          </div>
         </div>
         <div className="price">
           <p className={s.filterTitle}>Price/ 1 hour</p>
-          <Select
-            //  styles={}
-            placeholder="To $"
-            defaultValue={selectedOptionPrice}
-            onChange={setSelectedOptionPrice}
-            options={optionsPrice}
-          />
+          <div className={s.selectPrice}>
+            <Select
+              placeholder="To $"
+              styles={myStyles}
+              defaultValue={selectedOptionPrice}
+              onChange={setSelectedOptionPrice}
+              options={optionsPrice}
+              components={{
+                DropdownIndicator,
+                IndicatorSeparator: () => null,
+              }}
+            />
+          </div>
         </div>
         <div className="Makes">
           <p className={s.filterTitle}>Сar mileage / km</p>

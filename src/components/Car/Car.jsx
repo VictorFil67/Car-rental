@@ -38,18 +38,20 @@ export const Car = ({
     openModal(car);
   };
   return (
-    <li>
+    <li className="s.carItem">
       {/* <Heart type="button" onClick={toggleHeart}>
         {!heart ? <SvgNoHeart /> : <SvgHeart />}
       </Heart> */}
-      <button
-        className={s.favorites}
-        type="button"
-        onClick={() => dispatch(toggleHeart(id))}
-      >
-        {heart ? <Heart /> : <NotHeart />}
-      </button>
-      <img className={s.pic} src={img} alt={model} />
+      <div className={s.picWrap}>
+        <button
+          className={s.favorites}
+          type="button"
+          onClick={() => dispatch(toggleHeart(id))}
+        >
+          {heart ? <Heart /> : <NotHeart />}
+        </button>
+        <img className={s.pic} src={img} alt={model} />
+      </div>
       <div className={s.mainInfo}>
         <div className={s.titleInfo}>
           <h3>{make}</h3>
