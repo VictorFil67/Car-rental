@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import { useDispatch, useSelector } from "react-redux";
-import { selectCars, selectFavorites } from "../../store/cars/selectors";
+import { selectCars } from "../../store/cars/selectors";
 // import { Car } from "../Car/Car";
 // import s from "./Favorites.module.css";
 import { useEffect } from "react";

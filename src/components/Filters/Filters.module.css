@@ -1,0 +1,81 @@
+
+.searchForm {
+  display: flex;
+  gap: 18px;
+  margin: 0 auto;
+  width: 859px;
+  align-items: flex-end;
+}
+.inputs {
+  display: flex;
+  /* width: 320px; */
+}
+.mileageFrom {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border: none;
+  border-radius: 14px 0 0 14px;
+  outline: none;
+  background: #f7f7fb;
+}
+.mileageFrom::placeholder {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+
+.mileageTo {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  border: none;
+  border-radius: 0 14px 14px 0;
+  outline: none;
+  background: #f7f7fb;
+}
+
+.mileageTo::placeholder {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+
+.filterTitle {
+  text-align: left;
+  color: #8a8a89;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 128.571% */
+  margin-bottom: 8px;
+}
+.search {
+  display: flex;
+  width: 136px;
+  height: 48px;
+  padding: 14px 44px;
+  justify-content: center;
+  align-items: center;
+  /* flex-shrink: 0; */
+  border-radius: 12px;
+  border: none;
+  background: #3470ff;
+  color: #ffffff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+.search:hover {
+  background: #0b44cd;
+  cursor: pointer;
+}

@@ -2,7 +2,7 @@
 // import { useEffect, useState } from "react";
 // import { FilmsList } from "../components/FilmsList/FilmsList";
 
-import { Slick } from "../../components/Car/Slick";
+import { Slick } from "../../components/Slick/Slick";
 
 export const Home = () => {
   //   const [isLoading, setIsLoading] = useState(false);

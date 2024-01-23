@@ -4,7 +4,7 @@ import { Cars } from "../../components/Cars/Cars";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCars, selectPage } from "../../store/cars/selectors";
 import { useEffect, useState } from "react";
-import { fetchAllCars, fetchCars } from "../../store/cars/operations";
+import { fetchCars } from "../../store/cars/operations";
 import { toast } from "react-toastify";
 import { LoadMore } from "../../components/LoadMore/LoadMore";
 

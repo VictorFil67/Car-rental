@@ -1,5 +1,6 @@
 // import React from "react";
 import Slider from "react-slick";
+import s from "./Slick.module.css";
 
 export const Slick = () => {
   var settings = {
@@ -13,6 +14,7 @@ export const Slick = () => {
     <Slider {...settings}>
       <div>
         <img
+          className={s.img}
           src="https://ftp.goit.study/img/cars-test-task/gmc_yukon_denali.jpeg"
           alt="car"
         />

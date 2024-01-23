@@ -1,5 +1,5 @@
 // import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Car } from "../Car/Car";
 import s from "./Cars.module.css";
 // import { useDispatch, useSelector } from "react-redux";
