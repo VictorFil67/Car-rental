@@ -12,7 +12,6 @@ export const Catalog = () => {
   const dispatch = useDispatch();
   const cars = useSelector(selectCars);
   const page = useSelector(selectPage);
-  console.log(cars);
 
   const [resCars, setResCars] = useState(null);
 
@@ -20,20 +19,16 @@ export const Catalog = () => {
     dispatch(fetchCars(page))
       .unwrap()
       .then((res) => {
-        // navigate('/contacts');
         setResCars(res);
-        console.log(res);
         toast.success(`Cars are received`);
       })
       .catch(() => {
         toast.error("Something went wrong!!!");
-        // alert('error');
       });
   }, [dispatch, page]);
 
   return (
     <main>
-      {/* <div>Catalog</div> */}
       <section>
         <Filters />
       </section>

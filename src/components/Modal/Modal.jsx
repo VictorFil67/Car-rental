@@ -7,7 +7,7 @@ export const Modal = ({ url, close }) => {
     make,
     model,
     year,
-    // rentalPrice,
+    rentalPrice,
     address,
     // rentalCompany,
     type,
@@ -23,7 +23,6 @@ export const Modal = ({ url, close }) => {
   } = url;
 
   const handleClick = (e) => {
-    // console.log(e.target);
     if (e.target === e.currentTarget) {
       close();
     }
@@ -31,7 +30,13 @@ export const Modal = ({ url, close }) => {
   const city = address.split(",")[1];
   const country = address.split(",")[2];
   const age = rentalConditions.split(" ")[2].split("\n")[0];
-  const license = rentalConditions.split(" ")[2].split("\n")[1];
+  const license1 = rentalConditions.split(" ")[2].split("\n")[1];
+  const license2 = rentalConditions.split(" ")[3];
+  const license3 = rentalConditions.split(" ")[4];
+  const security = rentalConditions.split("\n")[2];
+
+  // const require = rentalConditions.split(" ")[2].split("\n")[2];
+  // console.log(require);
   const mileages = (mileage / 1000).toFixed(3).toString().replace(".", ",");
   return (
     <div>
@@ -103,18 +108,22 @@ export const Modal = ({ url, close }) => {
             <li className={s.age}>
               Minimum age: <span className={s.numAge}>{age}</span>
             </li>
-            <li className={s.license}>{license}</li>
-          </ul>
-          {/* <ul className={s.rentalConditions}>
-            <li className={s.age}>
-              Minimum age: <span className={s.numAge}>{age}</span>
+            <li className={s.license}>
+              {license1} {license2} {license3}
             </li>
-            <li className={s.license}>{license}</li>
-            <li>{functionalities[2]}</li>
-          </ul> */}
-          <p>
+          </ul>
+          <ul className={s.rentalConditions}>
+            <li className={s.license}>{security}</li>
+            <li className={s.age}>
+              Mileage: <span className={s.mleageNum}>{mileages}</span>
+            </li>
+            <li className={s.age}>
+              Price: <span className={s.mleageNum}>{rentalPrice}</span>
+            </li>
+          </ul>
+          {/* <p>
             Mleage: <span className={s.mleageNum}>{mileages}</span>
-          </p>
+          </p> */}
           <a className={s.tel} href="tel:+380730000000">
             Rental car
           </a>

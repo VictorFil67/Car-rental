@@ -36,7 +36,7 @@ export const Slick = () => {
       <div>
         <img
           className={s.img}
-          src="https://ftp.goit.study/img/cars-test-task/mercedes_sl_class.jpeg"
+          src="https://ftp.goit.study/img/cars-test-task/lamborghini_murcielago.jpeg"
           alt="car"
         />
       </div>

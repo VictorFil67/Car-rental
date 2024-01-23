@@ -36,25 +36,11 @@ const slice = createSlice({
         state.page !== 1
           ? (state.cars = [...state.cars, ...payload])
           : (state.cars = payload);
-        console.log(state.cars);
         state.isLoading = false;
       })
-      // .addCase(fetchCars.pending, (state) => {
-      //   state.isLoading = true;
-      // })
-      // .addCase(fetchCars.rejected, (state) => {
-      //   state.isLoading = false;
-      // })
       .addCase(fetchAllCars.fulfilled, (state, { payload }) => {
         state.cars = payload.filter((car) => state.favorites.includes(car.id));
         state.isLoading = false;
-
-        // })
-        // .addCase(fetchAllCars.pending, (state) => {
-        //   state.isLoading = true;
-        // })
-        // .addCase(fetchAllCars.rejected, (state) => {
-        //   state.isLoading = false;
       })
       .addCase(fetchFilteredCars.fulfilled, (state, { payload }) => {
         state.price
@@ -73,48 +59,8 @@ const slice = createSlice({
           state.isLoading = false;
         }
       );
-    //   .addCase(refreshThunk.fulfilled, (state, { payload }) => {
-    //     state.user = payload;
-    //     state.isLoggedIn = true;
-    //     state.isRefresh = false;
-    //   })
-    //   .addCase(refreshThunk.pending, (state) => {
-    //     state.isRefresh = true;
-    //   })
-    //   .addCase(refreshThunk.rejected, (state) => {
-    //     state.isRefresh = false;
-    //   })
-    //   .addMatcher(
-    //     isAnyOf(registerThunk.fulfilled, loginThunk.fulfilled),
-    //     (state, { payload }) => {
-    //       state.user = payload.user;
-    //       state.token = payload.token;
-    //       state.isLoggedIn = true;
-    //       state.isLoading = false;
-    //     }
-    //   )
-    //   .addMatcher(
-    //     isAnyOf(loginThunk.pending, registerThunk.pending, logoutThunk.pending),
-    //     (state) => {
-    //       state.isLoading = true;
-    //       state.isError = null;
-    //     }
-    //   )
-
-    //   .addMatcher(
-    //     isAnyOf(
-    //       loginThunk.rejected,
-    //       registerThunk.rejected,
-    //       logoutThunk.rejected
-    //     ),
-    //     (state, { payload }) => {
-    //       state.isLoading = false;
-    //       state.isError = payload;
-    //     }
-    //   );
   },
 });
 
-// export const { changeBalance } = authSlice.actions;
 export const carsReducer = slice.reducer;
 export const { toggleHeart, handleLoadMore, filteredByPrice } = slice.actions;

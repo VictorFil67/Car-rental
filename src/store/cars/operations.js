@@ -7,7 +7,6 @@ export const fetchCars = createAsyncThunk(
   async (page, thunkAPI) => {
     try {
       const { data } = await api(`car-rental?&limit=12&page=${page}`);
-      console.log(data);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
@@ -20,7 +19,6 @@ export const fetchAllCars = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const { data } = await api(`car-rental`);
-      console.log(data);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);

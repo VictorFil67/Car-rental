@@ -36,9 +36,6 @@ const optionsPrice = [];
 for (let i = 30; i <= 500; i += 10) {
   optionsPrice.push({ value: i, label: i });
 }
-// optionsPrice.push({ value: 40, label: "40" });
-console.log(optionsPrice);
-// import React from 'react'
 
 export const Filters = () => {
   const [selectedOption, setSelectedOption] = useState(null);
