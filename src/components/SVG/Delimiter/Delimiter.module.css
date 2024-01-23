@@ -1,0 +1,7 @@
+.delimeter {
+  /* width: 1px; */
+  height: 16px;
+  stroke-width: 1px;
+  stroke: rgba(18, 20, 23, 0.1);
+  margin: 0 6px;
+}

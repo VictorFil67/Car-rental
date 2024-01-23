@@ -1,0 +1,51 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.Modal {
+  /* max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px); */
+  width: 541px;
+  height: 752px;
+  border: 2px solid red;
+}
+
+.thumb {
+  width: 461px;
+  height: 248px;
+  margin: 40px auto;
+  background-color: transparent;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mleageNum {
+  color: #3470ff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
+.tel {
+  display: inline-flex;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #3470ff;
+}

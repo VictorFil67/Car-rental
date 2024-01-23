@@ -2,6 +2,8 @@
 // import { useEffect, useState } from "react";
 // import { FilmsList } from "../components/FilmsList/FilmsList";
 
+import { Slick } from "../../components/Car/Slick";
+
 export const Home = () => {
   //   const [isLoading, setIsLoading] = useState(false);
   //   const [error, setError] = useState(null);
@@ -22,6 +24,14 @@ export const Home = () => {
   //     getData();
   //   }, []);
   //   return (
+  return (
+    <main>
+      {/* <div>Home</div> */}
+      <section>Adout</section>
+      <Slick />
+    </main>
+  );
+
   //     <>
   //       {error && <h1>{error}</h1>}
   //       {isLoading && <h2>Loding...</h2>}
