@@ -11,12 +11,12 @@ import "react-toastify/dist/ReactToastify.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>
   <BrowserRouter basename="/car-rental">
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
+    <PersistGate loading={null} persistor={persistor}>
+      <Provider store={store}>
         <App />
-      </PersistGate>
-      <ToastContainer autoClose={1000} />
-    </Provider>
+        <ToastContainer autoClose={1000} />
+      </Provider>
+    </PersistGate>
   </BrowserRouter>
   // {/* </React.StrictMode> */}
 );
