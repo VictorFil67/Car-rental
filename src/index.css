@@ -1,6 +1,7 @@
 @import url("../node_modules/modern-normalize/modern-normalize.css");
 @import url("../node_modules/slick-carousel/slick/slick.css");
 @import url("../node_modules/slick-carousel/slick/slick-theme.css");
+@import url("../src/styles/fonts.css");
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,6 +16,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }*/
+body {
+  font-family: Manrope-Regular;
+  font-weight: 400;
+}
 h1,
 h2,
 h3,

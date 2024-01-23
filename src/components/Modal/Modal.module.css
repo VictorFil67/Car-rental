@@ -7,22 +7,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(18, 20, 23, 0.5);
   z-index: 1200;
 }
 
 .Modal {
   /* max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px); */
-  width: 541px;
+  /* width: 541px;
   height: 752px;
   border: 2px solid red;
+  position: relative;*/
+  padding: 40px;
+  position: absolute;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  width: 541px;
+  min-height: 752px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closeButton {
+  /* position: absolute;
+  top: 22px;
+  right: 22px; */
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
 }
 
 .thumb {
   width: 461px;
   height: 248px;
-  margin: 40px auto;
+  margin: 0 auto 14px;
   background-color: transparent;
 }
 
@@ -31,7 +53,89 @@
   width: 100%;
   object-fit: cover;
 }
+.titleInfo {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  color: #121417;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.model {
+  color: #3470ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.extraInfo {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-start;
+  padding: 0;
+  color: rgba(18, 20, 23, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+.description {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  text-align: start;
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+.accessories {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  text-align: start;
+}
+.rentalConditions {
+  display: flex;
+  gap: 36px;
+  justify-content: flex-start;
+  padding: 0;
+}
+.age {
+  color: #363535;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  letter-spacing: -0.24px;
+}
+.numAge {
+  color: #3470ff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.24px;
+}
 
+.license {
+  color: #363535;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
 .mleageNum {
   color: #3470ff;
   font-family: Montserrat;
@@ -48,4 +152,5 @@
   align-items: center;
   border-radius: 12px;
   background: #3470ff;
+  color: #ffffff;
 }

@@ -22,7 +22,6 @@ export const Car = ({
   openModal,
 }) => {
   const city = address.split(",")[1];
-  //   console.log(city);
   const country = address.split(",")[2];
   const dispatch = useDispatch();
   const favorites = useSelector(selectFavorites);
@@ -55,7 +54,7 @@ export const Car = ({
       <div className={s.mainInfo}>
         <div className={s.titleInfo}>
           <h3>{make}</h3>
-          <h3>{model},</h3>
+          <h3 className={s.model}>{model},</h3>
           <h3>{year}</h3>
         </div>
         <h3>{rentalPrice}</h3>

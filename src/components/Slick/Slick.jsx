@@ -15,24 +15,44 @@ export const Slick = () => {
       <div>
         <img
           className={s.img}
-          src="https://ftp.goit.study/img/cars-test-task/gmc_yukon_denali.jpeg"
+          src="https://ftp.goit.study/img/cars-test-task/bmw_z8.jpeg"
           alt="car"
         />
       </div>
       <div>
-        <h3>2</h3>
+        <img
+          className={s.img}
+          src="https://ftp.goit.study/img/cars-test-task/mini_convertible.jpeg"
+          alt="car"
+        />
       </div>
       <div>
-        <h3>3</h3>
+        <img
+          className={s.img}
+          src="https://ftp.goit.study/img/cars-test-task/bentley_azure.jpeg"
+          alt="car"
+        />
       </div>
       <div>
-        <h3>4</h3>
+        <img
+          className={s.img}
+          src="https://ftp.goit.study/img/cars-test-task/mercedes_sl_class.jpeg"
+          alt="car"
+        />
       </div>
       <div>
-        <h3>5</h3>
+        <img
+          className={s.img}
+          src="https://ftp.goit.study/img/cars-test-task/aston_martin_dbs.jpeg"
+          alt="car"
+        />
       </div>
       <div>
-        <h3>6</h3>
+        <img
+          className={s.img}
+          src="https://ftp.goit.study/img/cars-test-task/pontiac_firebird.jpeg"
+          alt="car"
+        />
       </div>
     </Slider>
   );

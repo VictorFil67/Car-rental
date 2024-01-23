@@ -1,34 +1,15 @@
-// import { getMovies } from "API/movies";
-// import { useEffect, useState } from "react";
-// import { FilmsList } from "../components/FilmsList/FilmsList";
-
+import { About } from "../../components/About/About";
 import { Slick } from "../../components/Slick/Slick";
 
 export const Home = () => {
-  //   const [isLoading, setIsLoading] = useState(false);
-  //   const [error, setError] = useState(null);
-  //   const [films, setFilms] = useState([]);
-  //   useEffect(() => {
-  //     const getData = async () => {
-  //       try {
-  //         setIsLoading(true);
-  //         setError(null);
-  //         const { results } = await getMovies();
-  //         setFilms(results);
-  //       } catch (error) {
-  //         setError(error.message);
-  //       } finally {
-  //         setIsLoading(false);
-  //       }
-  //     };
-  //     getData();
-  //   }, []);
-  //   return (
   return (
     <main>
-      {/* <div>Home</div> */}
-      <section>Adout</section>
-      <Slick />
+      <section>
+        <About />
+      </section>
+      <section>
+        <Slick />
+      </section>
     </main>
   );
 
