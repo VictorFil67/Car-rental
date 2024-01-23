@@ -30,9 +30,6 @@
 }
 
 .closeButton {
-  /* position: absolute;
-  top: 22px;
-  right: 22px; */
   position: absolute;
   background-color: transparent;
   border: none;
@@ -52,6 +49,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 14px;
 }
 .titleInfo {
   display: flex;

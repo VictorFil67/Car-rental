@@ -48,9 +48,7 @@ export const Filters = () => {
     console.log(parseInt("$40".replace("$", "")));
     dispatch(
       fetchFilteredCars({
-        // page: ,
         make: selectedOption?.value,
-        // rentalPrice: selectedOptionPrice?.value,
       })
     )
       .unwrap()
@@ -61,7 +59,6 @@ export const Filters = () => {
       })
       .catch((err) => {
         toast.error(err);
-        // alert('error');
       });
   };
   const DropdownIndicator = (props) => {

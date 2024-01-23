@@ -1,12 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 import s from "./Navigation.module.css";
 import SvgLogo from "../SVG/Logo";
-// import { useSelector } from "react-redux";
-// import { selectIsLoggedIn } from "../../store/auth/selectors";
-// import { UserMenu } from "../UserMenu/UserMenu";
 
 export const Navigation = () => {
-  //   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <div>
       <header>

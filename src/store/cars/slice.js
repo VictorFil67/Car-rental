@@ -1,5 +1,4 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
-// import { loginThunk, logoutThunk, registerThunk, refreshThunk } from "./thunk";
 import { fetchAllCars, fetchCars, fetchFilteredCars } from "./operations";
 
 const slice = createSlice({

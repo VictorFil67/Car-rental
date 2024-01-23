@@ -12,13 +12,4 @@ export const Home = () => {
       </section>
     </main>
   );
-
-  //     <>
-  //       {error && <h1>{error}</h1>}
-  //       {isLoading && <h2>Loding...</h2>}
-  //       <h1>Trending today</h1>
-  //       <FilmsList films={films} />
-  //     </>
-  //   );
 };
-// export default Home;

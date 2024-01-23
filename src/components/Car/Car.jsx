@@ -60,35 +60,32 @@ export const Car = ({
         <h3>{rentalPrice}</h3>
       </div>
       <ul className={s.extraInfo}>
+        <li>{city}</li>
         <li>
-          {city}
-          {/* <Delimiter /> */}
-        </li>
-        <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>{country}</li>
         <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>{rentalCompany}</li>
         <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>Premium</li>
       </ul>
       <ul className={s.extraInfo}>
         <li>{type}</li>
         <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>{model}</li>
         <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>{id}</li>
         <li>
-          <Delimiter />{" "}
+          <Delimiter />
         </li>
         <li>{functionalities[0]}</li>
       </ul>

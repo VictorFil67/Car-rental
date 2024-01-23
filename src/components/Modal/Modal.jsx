@@ -9,7 +9,6 @@ export const Modal = ({ url, close }) => {
     year,
     rentalPrice,
     address,
-    // rentalCompany,
     type,
     id,
     functionalities,
@@ -19,7 +18,6 @@ export const Modal = ({ url, close }) => {
     description,
     rentalConditions,
     mileage,
-    // openModal,
   } = url;
 
   const handleClick = (e) => {
@@ -34,10 +32,8 @@ export const Modal = ({ url, close }) => {
   const license2 = rentalConditions.split(" ")[3];
   const license3 = rentalConditions.split(" ")[4];
   const security = rentalConditions.split("\n")[2];
-
-  // const require = rentalConditions.split(" ")[2].split("\n")[2];
-  // console.log(require);
   const mileages = (mileage / 1000).toFixed(3).toString().replace(".", ",");
+
   return (
     <div>
       <div className={s.Overlay} onClick={handleClick}>
@@ -121,9 +117,6 @@ export const Modal = ({ url, close }) => {
               Price: <span className={s.mleageNum}>{rentalPrice}</span>
             </li>
           </ul>
-          {/* <p>
-            Mleage: <span className={s.mleageNum}>{mileages}</span>
-          </p> */}
           <a className={s.tel} href="tel:+380730000000">
             Rental car
           </a>
